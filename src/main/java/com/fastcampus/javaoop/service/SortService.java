@@ -5,9 +5,9 @@ import com.fastcampus.javaoop.logic.Sort;
 import java.util.List;
 
 public class SortService {
-  private final Sort<String> sort;
+  private final Sort<String> sort; // 인터페이스
 
-  public SortService(Sort<String> sort) {
+  public SortService(Sort<String> sort) { // new JavaSort<String>()
     this.sort = sort;
     System.out.println("구현체 : " + sort.getClass().getName());
   }

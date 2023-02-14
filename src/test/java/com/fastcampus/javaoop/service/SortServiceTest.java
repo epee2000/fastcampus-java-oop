@@ -14,9 +14,7 @@ class SortServiceTest {
 
   @Test
   void test() {
-
     List<String> actual = ss.doSort(List.of("3", "2", "1"));
-
     assertEquals(List.of("1", "2", "3"), actual);
   }
 
